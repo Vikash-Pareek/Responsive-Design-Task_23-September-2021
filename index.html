@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tablet-View Stylesheet -->
+    <link rel="stylesheet" href="tablet-view.css" media="screen and (max-width: 768px)" />
+
+    <!-- Mobile-View Stylesheet -->
+    <link rel="stylesheet" href="mobile-view.css" media="screen and (max-width: 480px)" />
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/9832e95fe7.js" crossorigin="anonymous"></script>
+
+    <title>Responsive Design Layout - TTN</title>
+</head>
+<body>
+    
+    <main>
+
+        <section id="sliding-navbar">
+            <div class="sliding-navbar-links">
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">Generic</a>
+                </div>
+                <div>
+                    <a href="#">Elements</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-banner-section">
+            <nav class="navigation-bar">
+                <a href="#"><h3>Responsive Layout</h3></a>
+                <div class="navbar-links">
+                    <a href="#">Home</a>
+                    <a href="#">Generic</a>
+                    <a href="#">Elements</a>
+                </div>
+                <!-- hamburger Icon -->
+                <div class="navbar-hamburger">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+            <div class="banner-content">
+                <p class="welcome-text">Welcome</p>
+                <div class="main-content-group">
+                    <div class="travel-group">
+                        <a href="#">
+                            <i class="fas fa-car-alt"></i>
+                            <h3>Travel</h3>
+                            <h4>Choose a ride</h4>
+                        </a>
+                    </div>
+                    <div class="gallery-group">
+                        <a href="#">
+                            <i class="fas fa-camera"></i>
+                            <h3>Gallery</h3>
+                            <h4>Choose photos</h4>
+                        </a>
+                    </div>
+                </div>
+                <button class="get-started-btn">Get Started</button>
+            </div> 
+        </section>
+
+        <section id="secondary-content-section">
+            <div class="content-box-one">
+                <div class="content-box-one-bg"></div>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Dignissimos asperiores nihil quae, placeat, consequatur fugit eos maxime similique incidunt accusantium aperiam deleniti velit! Assumenda illum aspernatur ex. Ipsum, quo error!</p>
+                <button class="learn-more-btn-one">Learn More</button>
+            </div>
+            <div class="content-box-two">
+                <div class="content-box-two-bg"></div>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Dignissimos asperiores nihil quae, placeat, consequatur fugit eos maxime similique incidunt accusantium aperiam deleniti velit! Assumenda illum aspernatur ex. Ipsum, quo error!</p>
+                <button class="learn-more-btn-two">Learn More</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        // Click functionality for the hamburger icon menu
+        $(document).ready(function () {
+            $('#sliding-navbar').css('display', 'none');
+            $('.navbar-hamburger, .fa-times').click(() => {
+                $('#sliding-navbar').animate({
+                width: "toggle"
+            });
+            });
+        });
+    </script>
+
+</body>
+</html>

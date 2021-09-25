@@ -1,0 +1,57 @@
+.navigation-bar {
+    padding: 1rem 0;
+}
+
+.navigation-bar h3 {
+    font-size: 14px;
+}
+
+.banner-content {
+    margin-top: 2rem;
+}
+
+.welcome-text {
+    font-size: 1rem;
+}
+
+.main-content-group {
+    flex-direction: column;
+}
+
+.fa-car-alt, .fa-camera {
+    font-size: 22px;
+}
+
+.main-content-group h1 {
+    margin-bottom: 0;
+}
+
+.travel-group, .gallery-group {
+    border: none;
+    margin: 1.5rem 0;
+}
+
+.travel-group {
+    margin-bottom: 1rem;
+}
+
+.gallery-group {
+    margin-top: 1rem;
+}
+
+.travel-group h3, .gallery-group h3 {
+    font-size: 16px;
+}
+
+.travel-group h4, .gallery-group h4 {
+    font-size: 10px;
+}
+
+.content-box-one-bg, .content-box-two-bg {
+    width: 10rem;
+    height: 10rem;
+}
+
+.get-started-btn {
+    padding: 0.5rem 2rem;
+}

@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Poppins-600';
+    src: local('Poppins-SemiBold.ttf'), 
+        url('./font/Poppins-SemiBold.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins-600';
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#sliding-navbar {
+    display: none;
+}
+
+#main-banner-section {
+    background-image: linear-gradient(rgba(195, 197, 197, 0.5), rgb(2, 2, 2)), 
+                        url("./images/main-cover-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 80vw;
+    border-bottom: 2px solid grey;
+}
+
+.navigation-bar a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navigation-bar h3 {
+    margin: 0;
+}
+
+.navbar-links {
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}
+
+.navbar-hamburger {
+    display: none;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.welcome-text {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.main-content-group {
+    display: flex;
+    text-align: center;
+}
+
+.main-content-group h3, h4 {
+    margin: 0;
+}
+
+.main-content-group h3 {
+    margin-bottom: 0.5rem;
+}
+
+.travel-group, .gallery-group {
+    padding: 0 4rem;
+    margin: 3rem 0;
+}
+
+.fa-car-alt, .fa-camera {
+    color: #6eeb83;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.travel-group a, .gallery-group a {
+    color: #fff;
+}
+
+.navigation-bar a:hover, .navbar-hamburger a:hover, .travel-group a:hover, .gallery-group a:hover {
+    color: #6eeb83;
+}
+
+.travel-group {
+    border-right: 0.5px solid #fff;
+}
+
+.gallery-group {
+    border-left: 0.5px solid #fff;
+}
+
+.get-started-btn, .learn-more-btn-one, .learn-more-btn-two {
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 0.8rem 3rem;
+    color: #6eeb83;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #6eeb83;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.learn-more-btn-one:hover, .learn-more-btn-two:hover {
+    background-color: #6eeb83;
+    color: #fff;
+}
+
+.get-started-btn:active, .learn-more-btn-one:active, .learn-more-btn-two:active {
+    transform: translateY(2px);
+}
+
+#secondary-content-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+    background-color: azure;
+}
+
+.content-box-one, .content-box-two {
+    width: 30vw;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-box-one-bg {
+    background-image: url('./images/mobile-camera-ing.jpg');
+    background-position-x: -2rem;
+}
+
+.content-box-two-bg {
+    background-image: url('./images/dslr-img.jpg');
+    background-position-y: -5rem;
+}
+
+.content-box-one-bg, .content-box-two-bg {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.content-box-one p, .content-box-two p {
+    color: grey;
+    margin-bottom: 2rem;
+}
